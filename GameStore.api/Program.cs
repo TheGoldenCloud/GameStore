@@ -1,7 +1,9 @@
 using GameStore.api.Entities;
 
-List<Game> game = new(){
-    new Game(){ Name = "Street Fighter II", Genre= "Fighting", Price = 19.99M, ReleaseDate = new DateTime(1991,2,1), ImageUri = "https:/placeholder.co/100" }
+List<Game> game = new(){    //In memory
+    new Game(){ Id = 1, Name = "Street Mortal combat", Genre= "Fighting", Price = 19.99M, ReleaseDate = new DateTime(1991,2,1), ImageUri = "https:/placeholder.co/100" },
+    new Game(){ Id = 2, Name = "Street Final Fantasy XIV", Genre= "Roleplaying", Price = 59.99M, ReleaseDate = new DateTime(2010,9,30), ImageUri = "https:/placeholder.co/100" },
+    new Game(){ Id = 3, Name = "Street Pes 10", Genre= "Sports", Price = 69.99M, ReleaseDate = new DateTime(2022,9,27), ImageUri = "https:/placeholder.co/100" }
 };
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,17 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/home", () => "This is for testing purpeses!");
 
-app.MapGet("/data", () => "{ data:300, samsung:200 }");
+string gamess()
+{
+    string allgames = "";
+    for (int i = 0; i <= game.Count - 1; i++)
+    {
+        allgames += "Name: " + game[i].Name + " price: " + game[i].Price + "\n";
+    }
+    return allgames;
+}
+
+
+app.MapGet("/data", () => gamess());
 
 app.Run();
