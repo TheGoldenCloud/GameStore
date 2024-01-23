@@ -13,6 +13,18 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/home", () => "This is for testing purpeses!");
 
+app.MapGet("/game/{id}", (int id) =>
+{
+    Game? game_ = game.Find(game => game.Id == id);
+
+    if (game_ is null)
+    {
+        return Results.NotFound();
+    }
+
+    return Results.Ok(game);
+});
+
 string gamess()
 {
     string allgames = "";
