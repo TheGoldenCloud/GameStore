@@ -1,7 +1,7 @@
 using GameStore.api.Entities;
 
 namespace GameStore.api.Repositories;
-public class InMemGamesRepository
+public class InMemGamesRepository : IGamesRepository
 {
     private readonly List<Game> games = new(){    //In memory
         new Game(){ Id = 1, Name = "Street Mortal combat", Genre= "Fighting", Price = 19.99M, ReleaseDate = new DateTime(1991,2,1), ImageUri = "https:/placeholder.co/100" },
