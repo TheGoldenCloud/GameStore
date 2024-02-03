@@ -1,9 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "gQ0AzWSkFe4b2T2dAFpc4GlvNxh1dYA/VIbbyxOV9Fipu1HhiUFnWOlLhk4EuReg25UD+lfVAO4+wGHwInphig==",
+  "dgSpecHash": "477eyNRj6DREsZmD8lLV5Ei7eKJqDDewQoQg7MpJT43X/mdsnm2GNUocyAp8M4/kMSw+G2ESgUFMKqYRjKTxBg==",
   "success": true,
   "projectFilePath": "C:\\My Data\\GITHUB WORKPLACE\\GameStore\\GameStore.api\\GameStore.api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.0\\microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\batav\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\batav\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\batav\\.nuget\\packages\\minimalapis.extensions\\0.10.0\\minimalapis.extensions.0.10.0.nupkg.sha512",
     "C:\\Users\\batav\\.nuget\\packages\\minivalidation\\0.7.0\\minivalidation.0.7.0.nupkg.sha512"
