@@ -18,7 +18,7 @@ var app = builder.Build();
 //     dbcontext.Database.Migrate();
 // }
 
-app.Services.InitializeDb();
+//app.Services.InitializeDb();
 
 app.MapGamesEndpoints();
 
