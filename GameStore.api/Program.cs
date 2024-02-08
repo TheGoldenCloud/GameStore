@@ -4,11 +4,15 @@ using GameStore.api.Repositories;
 using GameStore.api.Data;
 using Microsoft.EntityFrameworkCore;
 
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<IGamesRepository, InMemGamesRepository>();
+//https://www.youtube.com/watch?v=bKCzoR01lpE
 
-var constr = builder.Configuration.GetConnectionString("GameStoreContext");
-builder.Services.AddSqlServer<GameStoreContext>(constr);
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddRepositories(builder.configuration);
+// builder.Services.AddSingleton<IGamesRepository, InMemGamesRepository>();
+// builder.Services.AddScoped<IGamesRepository, EntityFrameworkGamesRepository>();
+
+// var constr = builder.Configuration.GetConnectionString("GameStoreContext");
+// builder.Services.AddSqlServer<GameStoreContext>(constr);
 
 var app = builder.Build();
 
