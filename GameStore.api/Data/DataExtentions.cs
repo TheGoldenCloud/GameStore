@@ -4,11 +4,11 @@ namespace GameStore.api.Data;
 
 public static class DataExtentions
 {
-    public static void InitializeDb(this IServiceProvider serviceProvider)
+    public static async Task InitializeDbAsync(this IServiceProvider serviceProvider)
     {
         using var scope = serviceProvider.CreateScope();
         var dbcontext = scope.ServiceProvider.GetRequiredService<GameStoreContext>();
-        dbcontext.Database.Migrate();
+        await dbcontext.Database.MigrateAsync();
     }
 
     public static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration)
