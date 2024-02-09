@@ -22,7 +22,7 @@ var app = builder.Build();
 //     dbcontext.Database.Migrate();
 // }
 
-//app.Services.InitializeDb();
+//await app.Services.InitializeDb();
 
 app.MapGamesEndpoints();
 
